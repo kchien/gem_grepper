@@ -21,4 +21,5 @@ Gem::Specification.new do |gem|
   
   gem.add_development_dependency('rspec', '~> 2.4')
   gem.add_development_dependency('spinach', '~> 0.6')
+  gem.add_development_dependency('capybara', '~> 2.0')
 end

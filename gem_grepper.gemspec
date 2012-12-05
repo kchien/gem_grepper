@@ -20,5 +20,5 @@ Gem::Specification.new do |gem|
   gem.add_dependency('bundler', '~> 1.2')
   
   gem.add_development_dependency('rspec', '~> 2.4')
-  gem.add_development_dependency('spinach', '~> 0.5')
+  gem.add_development_dependency('spinach', '~> 0.6')
 end

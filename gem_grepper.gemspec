@@ -19,8 +19,9 @@ Gem::Specification.new do |gem|
 
   gem.add_dependency('bundler', '~> 1.2')
 
-  gem.add_development_dependency('ap')
   gem.add_development_dependency('rspec', '~> 2.4')
   gem.add_development_dependency('spinach', '~> 0.6')
   gem.add_development_dependency('capybara', '~> 2.0')
+  gem.add_development_dependency('awesome_print')
+  gem.add_development_dependency('crack')
 end

@@ -1,12 +1,14 @@
 class RetriveGemMetadata < Spinach::FeatureSteps
-  Given 'I have a list of gems' do
-    @gems = ['rspec','spinach']
+  Given 'I have a list of gems from a text file' do
+    pending 'step not implemented'
   end
 
-  And 'I run gem_grepper with that list' do
-    ap @gems
-    @results = system("gem_grepper -i #{@gems}")
-    @results.should_not eq false
+  Given 'I have a list of gems from a lockfile' do
+    pending 'step not implemented'
+  end
+
+  When 'I successfully run `gem_grepper get \'spinach, aruba,cucumber,spinach-rails\'`' do
+    pending 'step not implemented'
   end
 
   Then 'the output should include information about each gem.' do

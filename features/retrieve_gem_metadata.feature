@@ -3,7 +3,16 @@ Feature: Retrive Gem Metadata
   I would like to know basic information about gems
   Such that I can manipulate and export it.
 
-  Scenario: Query RubyGems
-    Given I have a list of gems
-    And I run gem_grepper with that list
+  Scenario: Query RubyGems with a string list of gems as input
+    When I successfully run `gem_grepper get 'spinach, aruba,cucumber,spinach-rails'`
+    Then the output should include information about each gem.
+
+  Scenario: Query RubyGems with a flat text file as input
+    Given I have a list of gems from a text file
+    When I successfully run `gem_grepper get -f spec/fixtures/get_from_flat_text.txt`
+    Then the output should include information about each gem.
+
+  Scenario: Query RubyGems with Bundler lockfile as input
+    Given I have a list of gems from a lockfile
+    When I successfully run `gem_grepper get -f spec/fixtures/get_from_lockfile.lock`
     Then the output should include information about each gem.

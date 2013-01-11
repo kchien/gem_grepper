@@ -23,15 +23,21 @@ Gem Grepper accepts gem input in three formats:
 
 1. You can provide a Bundler lockfile:
 
+    ```
     $ gem_grepper get -f Gemfile.lock
+    ```
 
 2. You can provide a text file with one gem per line:
 
+    ```
     $ gem_grepper get -f list_of_gems.txt
+    ```
 
 3. You can provide a list of gems:
 
+    ```
     $ gem_gepper get 'spinach-rails,cucumber,rspec'
+    ```
 
 ## Contributing
 

@@ -8,11 +8,9 @@ Feature: Retrive Gem Metadata
     Then the output should include information about each gem.
 
   Scenario: Query RubyGems with a flat text file as input
-    Given I have a list of gems from a text file
     When I successfully run `gem_grepper get -f spec/fixtures/get_from_flat_text.txt`
     Then the output should include information about each gem.
 
   Scenario: Query RubyGems with Bundler lockfile as input
-    Given I have a list of gems from a lockfile
     When I successfully run `gem_grepper get -f spec/fixtures/get_from_lockfile.lock`
     Then the output should include information about each gem.

@@ -1,4 +1,4 @@
-Feature: Retrive Gem Metadata
+Feature: Retrieve Gem Metadata
   As a user
   I would like to know basic information about gems
   Such that I can manipulate and export it.

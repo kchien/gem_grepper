@@ -1,5 +1,5 @@
 require 'aruba/api'
-class RetriveGemMetadata < Spinach::FeatureSteps
+class RetrieveGemMetadata < Spinach::FeatureSteps
   include Aruba::Api
 
   When 'I successfully run `gem_grepper get \'spinach, aruba,cucumber,spinach-rails\'`' do

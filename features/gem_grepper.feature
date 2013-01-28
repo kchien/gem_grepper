@@ -12,3 +12,8 @@ Feature: gem_grepper help
     When I successfully run `gem_grepper help get`
     Then the exit status should be 0
     And the output should include `get` usage instructions
+
+  Scenario: App outputs `export` usage instructions
+    When I successfully run `gem_grepper help export`
+    Then the exit status should be 0
+    And the output should include `export` usage instructions

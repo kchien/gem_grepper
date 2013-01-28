@@ -1,5 +1,4 @@
-require "gem_grepper/version"
+require 'gem_grepper/version.rb'
 
-module GemGrepper
-  # Your code goes here...
-end
+# Add requires for other files you add to your project here, so
+# you just need to require this one file in your bin file

@@ -1,6 +1,8 @@
-# Gem Grepper [![Build
-Status](https://travis-ci.org/stevenhaddox/gem_grepper.png?branch=master)](https://travis-ci.org/stevenhaddox/gem_grepper)
+#Gem Grepper
 ===
+
+[![Build
+Status](https://travis-ci.org/stevenhaddox/gem_grepper.png?branch=master)](https://travis-ci.org/stevenhaddox/gem_grepper)
 
 A gem for gathering information about other gems from multiple sources (RubyGems, RubyToolbox, IsIt19, etc.)
 

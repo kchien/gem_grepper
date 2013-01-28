@@ -2,7 +2,7 @@
 require 'gli'
 include GLI::App
 
-require 'ap'
+require 'ap' #TODO: Remove me
 
 program_desc 'Gather information about other gems from multiple sources.'
 
@@ -28,9 +28,19 @@ command :get do |c|
 end
 
 desc 'Output gem data in a specified format'
-arg_name 'Describe arguments to export here'
 command :export do |c|
+  c.flag :f,:format, :default_value => 'json', :desc => 'Format for exported file: json, csv, xml, spreadsheet'
+  c.flag :o,:output, :default_value => 'gems_metadata', :desc => 'File to export to'
   c.action do |global_options,options,args|
+
+    # Your command logic here
+    ap global_options
+    ap options
+    ap args
+
+    # If you have any errors, just raise them
+    # raise "that command made no sense"
+
     puts "export command ran"
   end
 end

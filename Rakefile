@@ -18,14 +18,13 @@ end
 
 desc 'Run features'
 task :features => :spinach_env do
-  #Ignore @wip & @bug tags
-  ruby '-S spinach --tags ~@wip ~@bug'
+  ruby '-S spinach'
 end
 
 desc 'Run features tagged as work-in-progress (@wip)'
 task 'features:wip' do
   #Ignore @pending tags
-  ruby '-S spinach --tags @wip ~@pending'
+  ruby '-S spinach --tags @wip'
 end
 
 task :spinach => :features

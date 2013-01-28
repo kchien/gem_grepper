@@ -14,6 +14,10 @@ class GemGrepperHelp < Spinach::FeatureSteps
     run "gem_grepper help get"
   end
 
+  When 'I successfully run `gem_grepper help export`' do
+    run "gem_grepper help export"
+  end
+
   And 'the output should include usage instructions' do
     assert_passing_with("NAME")
     assert_passing_with("gem_grepper - Gather information about other gems from multiple sources")
@@ -33,5 +37,13 @@ class GemGrepperHelp < Spinach::FeatureSteps
     assert_passing_with("'comma-delimited,list,of,gems'")
     assert_passing_with("COMMAND OPTIONS")
     assert_passing_with("-f, --file")
+  end
+
+  And 'the output should include `export` usage instructions' do
+    assert_passing_with("NAME")
+    assert_passing_with("SYNOPSIS")
+    assert_passing_with("COMMAND OPTIONS")
+    assert_passing_with("-f, --format")
+    assert_passing_with("-o, --output")
   end
 end

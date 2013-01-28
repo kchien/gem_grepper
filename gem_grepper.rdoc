@@ -1,0 +1,5 @@
+= gem_grepper
+
+Generate this with
+    gem_grepper rdoc
+After you have described your command line interface

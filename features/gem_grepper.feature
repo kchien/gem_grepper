@@ -1,6 +1,6 @@
-Feature: gem_grepper runs
+Feature: gem_grepper help
   In order to help users understand options
-  I want to have ensure gem_grepper runs
+  I want to ensure gem_grepper help runs by default
   So they can see the basic usage instructions.
 
   Scenario: App outputs usage instructions

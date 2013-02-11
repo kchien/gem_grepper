@@ -1,4 +1,3 @@
-require 'aruba/api'
 class GemGrepperHelp < Spinach::FeatureSteps
   include Aruba::Api
 

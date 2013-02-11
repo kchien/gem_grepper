@@ -1,4 +1,3 @@
-require 'aruba/api'
 class RetrieveGemMetadata < Spinach::FeatureSteps
   include Aruba::Api
 

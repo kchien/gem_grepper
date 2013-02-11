@@ -4,7 +4,7 @@
 [![Build
 Status](https://travis-ci.org/stevenhaddox/gem_grepper.png?branch=master)](https://travis-ci.org/stevenhaddox/gem_grepper)
 
-A gem for gathering information about other gems from multiple sources (RubyGems, RubyToolbox, IsIt19, etc.)
+A gem for gathering information about other gems from multiple sources (RubyGems, RubyToolbox, IsItRuby19, etc.)
 
 ## Installation
 

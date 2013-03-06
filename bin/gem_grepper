@@ -1,5 +1,12 @@
 #!/usr/bin/env ruby
-require 'gli'
+
+begin
+  require 'gli'
+rescue LoadError
+  require 'rubygems'
+  require 'gli'
+end
+
 include GLI::App
 
 require 'ap' #TODO: Remove me
